@@ -1,0 +1,13 @@
+@import url("../../theme/variables.css");
+
+.size{
+    font-size: 4rem;
+}
+
+.size *{
+    font-size: 4rem;
+}
+
+.style{
+    color: var(--ion-color-primary);
+}

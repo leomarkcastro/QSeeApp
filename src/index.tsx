@@ -4,6 +4,8 @@ import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 
+import 'leaflet/dist/leaflet.css'
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

@@ -1,0 +1,117 @@
+@import url("../../theme/variables.css");
+
+.beacon{
+    position:absolute;
+    top:50%;
+    left:50%;
+    background-color:#DB2828;
+    height:1em;
+    width:1em;
+    border-radius:50%;
+    transform: translate(-25%, -25%);
+    z-index: 100;
+}
+.beacon:before{
+    position:absolute;
+    content:"";
+    height:1em;
+    width:1em;
+    left:0;
+    top:0;
+    background-color:transparent;
+    border-radius:50%;
+    box-shadow:0px 0px 2px 2px #DB2828;
+    animation:active 2s infinite linear;
+}
+
+@-webkit-keyframes grow {
+    0% {
+        -webkit-transform: scale(.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes active{
+    0%{
+        -webkit-transform:scale(.1);
+        opacity:1;
+    }
+    70%{
+        -webkit-transform:scale(10);
+        opacity:0;
+    }
+    100%{
+        opacity:0;
+    }
+}
+
+@keyframes active{
+    0%{
+        transform:scale(.1);
+        opacity:1;
+    }
+    70%{
+        transform:scale(10);
+        opacity:0;
+    }
+    100%{
+        opacity:0;
+    }
+}
+
+
+.beacon_bg{
+    position: absolute;
+    height: 50vh;
+    width: 100vw;
+    z-index: 10;
+}
+
+.map_bg{
+    position: absolute;
+    height: 50vh;
+    width: 100vw;
+    z-index:-5;
+}
+
+
+.stat_card{
+    text-align: center;
+    margin-top: 50vh;
+    padding-top: 0.5rem;
+    min-height: 50%;
+    background: linear-gradient(180deg, rgba(2,0,36,0) 0%, var(--ion-color-medium) 100%);
+    background: transparent;
+    z-index: 10;
+}
+
+.status{
+    font-size: 3.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.beepstat{
+    
+}
+
+.profile{
+    --background: transparent;
+    --min-height: 5rem;
+}
+
+.button{
+}

@@ -1,0 +1,7 @@
+@import url("../../theme/variables.css");
+
+.home_button{
+    border: 0.15rem solid var(--ion-color-primary);
+    border-style: inset;
+    border-radius: 100rem;
+}
