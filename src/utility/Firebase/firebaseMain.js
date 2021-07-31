@@ -95,6 +95,7 @@ export function hookAccount(callback){
 
 }
 
+
 export function data_hook(col, doc, callback=(e)=>console.log(e), errorCB=(e)=>console.log(e)){
 
     const unsubscribe = firebase.firestore()
